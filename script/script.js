@@ -865,22 +865,22 @@ function classificacaoEUAGB() {
 
 function classificacaoUEFAGB() {
 	if (parseInt(ptsUEFA.innerHTML) > parseInt(ptsIra.innerHTML) && parseInt(ptsUEFA.innerHTML) > parseInt(ptsEUA.innerHTML) && parseInt(ptsUEFA.innerHTML) > parseInt(ptsInglaterra.innerHTML)){
-		document.getElementById("Primeiro_Grupo_A").innerHTML = bandeiraUEFA + UEFA.innerHTML;
+		document.getElementById("Primeiro_Grupo_B").innerHTML = bandeiraUEFA + UEFA.innerHTML;
 		primeiroGA = bandeiraUEFA + UEFA.innerHTML;
 	} else if (parseInt(ptsUEFA.innerHTML) > parseInt(ptsIra.innerHTML) && parseInt(ptsUEFA.innerHTML) > parseInt(ptsEUA.innerHTML) && parseInt(ptsUEFA.innerHTML) == parseInt(ptsInglaterra.innerHTML) && parseInt(sgUEFA.innerHTML) > parseInt(sgInglaterra.innerHTML) ){
-			document.getElementById("Primeiro_Grupo_A").innerHTML = bandeiraUEFA + UEFA.innerHTML;
+			document.getElementById("Primeiro_Grupo_B").innerHTML = bandeiraUEFA + UEFA.innerHTML;
 			primeiroGA = bandeiraUEFA + UEFA.innerHTML;
-			document.getElementById("Segundo_Grupo_A").innerHTML = Inglaterra.innerHTML + bandeiraInglaterra;
+			document.getElementById("Segundo_Grupo_B").innerHTML = Inglaterra.innerHTML + bandeiraInglaterra;
 			segundoGA = Inglaterra.innerHTML + bandeiraInglaterra;
 		} else if (parseInt(ptsUEFA.innerHTML) > parseInt(ptsIra.innerHTML) && parseInt(ptsUEFA.innerHTML) > parseInt(ptsInglaterra.innerHTML) && parseInt(ptsUEFA.innerHTML) == parseInt(ptsEUA.innerHTML) && parseInt(sgUEFA.innerHTML) > parseInt(sgEUA.innerHTML) ) {
-			document.getElementById("Primeiro_Grupo_A").innerHTML = bandeiraUEFA + UEFA.innerHTML;
+			document.getElementById("Primeiro_Grupo_B").innerHTML = bandeiraUEFA + UEFA.innerHTML;
 			primeiroGA = bandeiraUEFA + UEFA.innerHTML;
-			document.getElementById("Segundo_Grupo_A").innerHTML = EUA.innerHTML + bandeiraEUA;
+			document.getElementById("Segundo_Grupo_B").innerHTML = EUA.innerHTML + bandeiraEUA;
 			segundoGA = EUA.innerHTML + bandeiraEUA;
 		} else if (parseInt(ptsUEFA.innerHTML) > parseInt(ptsInglaterra.innerHTML) && parseInt(ptsUEFA.innerHTML) > parseInt(ptsEUA.innerHTML) && parseInt(ptsUEFA.innerHTML) == parseInt(ptsIra.innerHTML) && parseInt(sgUEFA.innerHTML) > parseInt(sgIra.innerHTML) ){
-		document.getElementById("Primeiro_Grupo_A").innerHTML = bandeiraUEFA + UEFA.innerHTML;
+		document.getElementById("Primeiro_Grupo_B").innerHTML = bandeiraUEFA + UEFA.innerHTML;
 		primeiroGA = bandeiraUEFA + UEFA.innerHTML;
-		document.getElementById("Segundo_Grupo_A").innerHTML = Ira.innerHTML + bandeiraIra;
+		document.getElementById("Segundo_Grupo_B").innerHTML = Ira.innerHTML + bandeiraIra;
 		segundoGA = Ira.innerHTML + bandeiraIra;
 	}
 
@@ -2221,22 +2221,22 @@ function classificacaoAlemanhaGE() {
 
 function classificacaoJapaoGE() {
 	if (parseInt(ptsJapao.innerHTML) > parseInt(ptsRepescagem2.innerHTML) && parseInt(ptsJapao.innerHTML) > parseInt(ptsAlemanha.innerHTML) && parseInt(ptsJapao.innerHTML) > parseInt(ptsEspanha.innerHTML)){
-		document.getElementById("Primeiro_Grupo_D").innerHTML = bandeiraJapao + Japao.innerHTML;
+		document.getElementById("Primeiro_Grupo_E").innerHTML = bandeiraJapao + Japao.innerHTML;
 		primeiroGD = bandeiraJapao + Japao.innerHTML;
 	} else if (parseInt(ptsJapao.innerHTML) > parseInt(ptsRepescagem2.innerHTML) && parseInt(ptsJapao.innerHTML) > parseInt(ptsAlemanha.innerHTML) && parseInt(ptsJapao.innerHTML) == parseInt(ptsEspanha.innerHTML) && parseInt(sgJapao.innerHTML) > parseInt(sgEspanha.innerHTML) ){
-			document.getElementById("Primeiro_Grupo_D").innerHTML = bandeiraunisia + Japao.innerHTML;
+			document.getElementById("Primeiro_Grupo_E").innerHTML = bandeiraunisia + Japao.innerHTML;
 			primeiroGD = bandeiraJapao + Japao.innerHTML;
-			document.getElementById("Segundo_Grupo_D").innerHTML = Espanha.innerHTML + bandeiraEspanha;
+			document.getElementById("Segundo_Grupo_E").innerHTML = Espanha.innerHTML + bandeiraEspanha;
 			segundoGD = Espanha.innerHTML + bandeiraEspanha;
 		} else if (parseInt(ptsJapao.innerHTML) > parseInt(ptsRepescagem2.innerHTML) && parseInt(ptsJapao.innerHTML) > parseInt(ptsEspanha.innerHTML) && parseInt(ptsJapao.innerHTML) == parseInt(ptsAlemanha.innerHTML) && parseInt(sgJapao.innerHTML) > parseInt(sgAlemanha.innerHTML) ) {
-			document.getElementById("Primeiro_Grupo_D").innerHTML = bandeiraJapao + Japao.innerHTML;
+			document.getElementById("Primeiro_Grupo_E").innerHTML = bandeiraJapao + Japao.innerHTML;
 			primeiroGD = bandeiraJapao + Japao.innerHTML;
-			document.getElementById("Segundo_Grupo_D").innerHTML = Alemanha.innerHTML + bandeiraAlemanha;
+			document.getElementById("Segundo_Grupo_E").innerHTML = Alemanha.innerHTML + bandeiraAlemanha;
 			segundoGD = Alemanha.innerHTML + bandeiraAlemanha;
 		} else if (parseInt(ptsJapao.innerHTML) > parseInt(ptsEspanha.innerHTML) && parseInt(ptsJapao.innerHTML) > parseInt(ptsAlemanha.innerHTML) && parseInt(ptsJapao.innerHTML) == parseInt(ptsRepescagem2.innerHTML) && parseInt(sgJapao.innerHTML) > parseInt(sgRepescagem2.innerHTML) ){
-		document.getElementById("Primeiro_Grupo_D").innerHTML = bandeiraJapao + Japao.innerHTML;
+		document.getElementById("Primeiro_Grupo_E").innerHTML = bandeiraJapao + Japao.innerHTML;
 		primeiroGD = bandeiraJapao + Japao.innerHTML;
-		document.getElementById("Segundo_Grupo_D").innerHTML = Repescagem2.innerHTML + bandeiraRepescagem2;
+		document.getElementById("Segundo_Grupo_E").innerHTML = Repescagem2.innerHTML + bandeiraRepescagem2;
 		segundoGD = Repescagem2.innerHTML + bandeiraRepescagem2;
 	}
 
@@ -2673,22 +2673,22 @@ function classificacaoMarrocosGF() {
 
 function classificacaoCroaciaGF() {
 	if (parseInt(ptsCroacia.innerHTML) > parseInt(ptsCanada.innerHTML) && parseInt(ptsCroacia.innerHTML) > parseInt(ptsMarrocos.innerHTML) && parseInt(ptsCroacia.innerHTML) > parseInt(ptsBelgica.innerHTML)){
-		document.getElementById("Primeiro_Grupo_D").innerHTML = bandeiraCroacia + Croacia.innerHTML;
+		document.getElementById("Primeiro_Grupo_F").innerHTML = bandeiraCroacia + Croacia.innerHTML;
 		primeiroGD = bandeiraCroacia + Croacia.innerHTML;
 	} else if (parseInt(ptsCroacia.innerHTML) > parseInt(ptsCanada.innerHTML) && parseInt(ptsCroacia.innerHTML) > parseInt(ptsMarrocos.innerHTML) && parseInt(ptsCroacia.innerHTML) == parseInt(ptsBelgica.innerHTML) && parseInt(sgCroacia.innerHTML) > parseInt(sgBelgica.innerHTML) ){
-			document.getElementById("Primeiro_Grupo_D").innerHTML = bandeiraunisia + Croacia.innerHTML;
+			document.getElementById("Primeiro_Grupo_F").innerHTML = bandeiraunisia + Croacia.innerHTML;
 			primeiroGD = bandeiraCroacia + Croacia.innerHTML;
-			document.getElementById("Segundo_Grupo_D").innerHTML = Belgica.innerHTML + bandeiraBelgica;
+			document.getElementById("Segundo_Grupo_F").innerHTML = Belgica.innerHTML + bandeiraBelgica;
 			segundoGD = Belgica.innerHTML + bandeiraBelgica;
 		} else if (parseInt(ptsCroacia.innerHTML) > parseInt(ptsCanada.innerHTML) && parseInt(ptsCroacia.innerHTML) > parseInt(ptsBelgica.innerHTML) && parseInt(ptsCroacia.innerHTML) == parseInt(ptsMarrocos.innerHTML) && parseInt(sgCroacia.innerHTML) > parseInt(sgMarrocos.innerHTML) ) {
-			document.getElementById("Primeiro_Grupo_D").innerHTML = bandeiraCroacia + Croacia.innerHTML;
+			document.getElementById("Primeiro_Grupo_F").innerHTML = bandeiraCroacia + Croacia.innerHTML;
 			primeiroGD = bandeiraCroacia + Croacia.innerHTML;
-			document.getElementById("Segundo_Grupo_D").innerHTML = Marrocos.innerHTML + bandeiraMarrocos;
+			document.getElementById("Segundo_Grupo_F").innerHTML = Marrocos.innerHTML + bandeiraMarrocos;
 			segundoGD = Marrocos.innerHTML + bandeiraMarrocos;
 		} else if (parseInt(ptsCroacia.innerHTML) > parseInt(ptsBelgica.innerHTML) && parseInt(ptsCroacia.innerHTML) > parseInt(ptsMarrocos.innerHTML) && parseInt(ptsCroacia.innerHTML) == parseInt(ptsCanada.innerHTML) && parseInt(sgCroacia.innerHTML) > parseInt(sgCanada.innerHTML) ){
-		document.getElementById("Primeiro_Grupo_D").innerHTML = bandeiraCroacia + Croacia.innerHTML;
+		document.getElementById("Primeiro_Grupo_F").innerHTML = bandeiraCroacia + Croacia.innerHTML;
 		primeiroGD = bandeiraCroacia + Croacia.innerHTML;
-		document.getElementById("Segundo_Grupo_D").innerHTML = Canada.innerHTML + bandeiraCanada;
+		document.getElementById("Segundo_Grupo_F").innerHTML = Canada.innerHTML + bandeiraCanada;
 		segundoGD = Canada.innerHTML + bandeiraCanada;
 	}
 
