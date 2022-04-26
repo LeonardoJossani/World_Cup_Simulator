@@ -1,0 +1,245 @@
+@import url('https: //fonts.googleapis.com/css?family=Poppins: 100,200,300,400,500,600,700,800,900');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body { 
+	margin: 40px;
+	background: linear-gradient(#ce0b45, #5b0c29);
+}
+
+.world_cup_simulator {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #c19e4a;
+}
+
+.logo {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.logo img {
+	height: 100px;
+	width: 200px;
+	border: 1px solid #c19e4a;
+}
+
+.navigation {
+	position: relative;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	min-width: 800px;
+}
+
+.navigation ul{
+	display: flex;
+}
+
+.navigation ul li{
+	position: relative;
+	list-style: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.navigation ul li a{
+	text-decoration: none;
+	color: #c19e4a;
+}
+
+.grupo_a, .grupo_b, .grupo_c, .grupo_d, .grupo_e, .grupo_f, .grupo_g, .grupo_h { 
+	border: 1px solid #c19e4a;
+	text-align: center;
+	padding: 5px;
+	margin: 25px auto;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.grupo_a td, .grupo_b td, .grupo_c td, .grupo_d td, .grupo_e td, .grupo_f td, .grupo_g td, .grupo_h td {
+	padding: 5px;
+	color: #c19e4a;
+}
+
+.jogos_grupo_a, .jogos_grupo_b, .jogos_grupo_c, .jogos_grupo_d, .jogos_grupo_e, .jogos_grupo_f, .jogos_grupo_g, .jogos_grupo_h {
+	text-align: center;
+	display: flex; 
+	justify-content: center;
+	margin-right: 10px;
+	padding: 10px;
+	color: white;
+}
+
+.jogos_grupo_a input, .jogos_grupo_b input, .jogos_grupo_c input, .jogos_grupo_d input, .jogos_grupo_e input, .jogos_grupo_f input, .jogos_grupo_g input, .jogos_grupo_h input {
+	width: 35px;
+	height: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+td img {
+	height: 50px;
+	width: 70px;
+}
+
+.jogos_grupo_a img, .jogos_grupo_b img, .jogos_grupo_c img, .jogos_grupo_d img, .jogos_grupo_e img, .jogos_grupo_f img, .jogos_grupo_g img, .jogos_grupo_h img {
+	height: 30px;
+	width: 50px;
+}
+
+
+.repescagens {
+	color: #c19e4a;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.oitavas h1{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 35px;
+	color: #c19e4a;
+}
+
+.oitavas1, .oitavas2, .oitavas3, .oitavas4, .oitavas5, .oitavas6, .oitavas7, .oitavas8 {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-right: 10px;
+	padding: 10px;
+	color: white;
+}
+
+.oitavas1 input, .oitavas2 input, .oitavas3 input, .oitavas4 input, .oitavas5 input, .oitavas6 input, .oitavas7 input, .oitavas8 input {
+	width: 35px;
+	height: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.quartas h1{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 35px;
+	color: #c19e4a;
+}
+
+.quartas1, .quartas2, .quartas3, .quartas4 {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-right: 10px;
+	margin-bottom: 50px;
+	padding: 10px;
+	color: white;
+}
+
+.quartas1 input, .quartas2 input, .quartas3 input, .quartas4 input {
+	width: 35px;
+	height: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.semi h1{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 35px;
+	color: #c19e4a;
+}
+
+.semi1, .semi2 {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-right: 10px;
+	margin-bottom: 70px;
+	padding: 10px;
+	color: white;
+}
+
+.semi1 input, .semi2 input {
+	width: 35px;
+	height: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.final h1{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 35px;
+	color: #c19e4a;
+}
+
+.final1 {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-right: 10px;
+	padding: 10px;
+	color: white;
+}
+
+.final1 input {
+	width: 35px;
+	height: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.grupo_b_section, .grupo_c_section, .grupo_c_section, .grupo_d_section, .grupo_e_section, .grupo_f_section, .grupo_g_section, .grupo_h_section, .oitavas_section, .quartas_section, .semi_section, .final_section {
+	display: none;
+}
+
+.taca {
+	display: flex;
+	justify-content: center;
+}
+
+.taca img {
+	width: 150px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+}
+
+.footer {
+	text-align: center;	
+	margin-top: 50px;
+}
+
+.madeby { 
+	color: #c19e4a;
+}
+
+.Leo {
+	text-align: center;
+	text-decoration: none;
+	margin: 0 auto;
+	color: #c19e4a;
+}

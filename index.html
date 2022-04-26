@@ -1,0 +1,1368 @@
+<!doctype html>
+<html>
+	<head>
+		<title>World Cup Simulator</title>
+		<meta charset = "utf-8" />
+		<meta name = "viewport" content="width = device-witdh, initial-scale = 1.0, maximum-scale = 1.0">
+		<link href = "css/style.css" type = "text/css" rel = "stylesheet" />
+	</head>
+	<body>
+		<h1 class = "world_cup_simulator">World Cup Simulator</h1>
+
+		<div class = "logo">
+			<img src = "images/logo.png">
+		</div><!--logo-->
+
+		<div class = "navigation">
+			<ul>
+				<li>
+					<a href = "#" onclick = "showGrupoA()">
+						<span>Grupo A</span>
+					</a>
+				</li>
+				<li>
+					<a href = "#" onclick = "showGrupoB()">
+						<span>Grupo B</span>
+					</a>
+				</li>
+				<li>
+					<a href = "#" onclick = "showGrupoC()">
+						<span>Grupo C</span>
+					</a>
+				</li>
+				<li>
+					<a href = "#" onclick = "showGrupoD()">
+						<span>Grupo D</span>
+					</a>
+				</li>
+				<li>
+					<a href = "#" onclick = "showGrupoE()">
+						<span>Grupo E</span>
+					</a>
+				</li>
+				<li>
+					<a href = "#" onclick = "showGrupoF()">
+						<span>Grupo F</span>
+					</a>
+				</li>
+				<li>
+					<a href = "#" onclick = "showGrupoG()">
+						<span>Grupo G</span>
+					</a>
+				</li>
+				<li>
+					<a href = "#" onclick = "showGrupoH()">
+						<span>Grupo H</span>
+					</a>
+				</li>
+				<li>
+					<a href = "#" onclick = "showOitavas(), classificacaoCatarGA(), classificacaoEquadorGA(), classificacaoSenegalGA(), classificacaoHolandaGA(), classificacaoInglaterraGB(), classificacaoIraGB(), classificacaoEUAGB(), classificacaoUEFAGB(), classificacaoArgentinaGC(), classificacaoArabiaSauditaGC(), classificacaoMexicoGC(), classificacaoPoloniaGC(), classificacaoFrançaGD(), classificacaoRepescagem1GD(), classificacaoDinamarcaGD(), classificacaoTunisiaGD(), classificacaoEspanhaGE(), classificacaoRepescagem2GE(), classificacaoAlemanhaGE(), classificacaoJapaoGE(), classificacaoBelgicaGF(), classificacaoCanadaGF(), classificacaoMarrocosGF(), classificacaoCroaciaGF(), classificacaoBrasilGG(), classificacaoServiaGG(), classificacaoSuiçaGG(), classificacaoCamaroesGG(), classificacaoPortugalGH(), classificacaoGanaGH(), classificacaoUruguaiGH(), classificacaoCoreiaDoSulGH()">
+						<span>Oitavas de Final</span>
+					</a>
+				</li>
+				<li>
+					<a href = "#" onclick = "showQuartas()">
+						<span>Quartas de Final</span>
+					</a>
+				</li>
+				<li>
+					<a href = "#" onclick = "showSemi()">
+						<span>Semi Final</span>
+					</a>
+				</li>
+				<li>
+					<a href = "#" onclick = "showFinal()">
+						<span>Final</span>
+					</a>
+				</li>
+			</ul>			
+		</div>
+		
+
+
+		<section class = "grupo_a_section" id = "grupo_a_section"><!--Grupo A-->
+			<table class = "grupo_a">
+				<tr>
+					<td style = "color: #c19e4a;">Grupo A</td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td>Seleção</td>
+					<td>Jogos</td>
+					<td>Vitórias</td>
+					<td>Empates</td>
+					<td>Derrotas</td>
+					<td>Gols Pró</td>
+					<td>Gols Contra</td>
+					<td>Saldo de Gols</td>
+					<td>Pontos</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraCatar.JPG"></td>
+					<td id = "Catar">Catar</td>
+					<td id = "jCatar">0</td>
+					<td id = "vCatar">0</td>
+					<td id = "eCatar">0</td>
+					<td id = "dCatar">0</td>
+					<td id = "gpCatar">0</td>
+					<td id = "gcCatar">0</td>
+					<td id = "sgCatar">0</td>
+					<td id = "ptsCatar">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraEquador.JPG"></td>
+					<td id = "Equador">Equador</td>
+					<td id = "jEquador">0</td>
+					<td id = "vEquador">0</td>
+					<td id = "eEquador">0</td>
+					<td id = "dEquador">0</td>
+					<td id = "gpEquador">0</td>
+					<td id = "gcEquador">0</td>
+					<td id = "sgEquador">0</td>
+					<td id = "ptsEquador">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraSenegal.JPG"></td>
+					<td id = "Senegal">Senegal</td>
+					<td id = "jSenegal">0</td>
+					<td id = "vSenegal">0</td>
+					<td id = "eSenegal">0</td>
+					<td id = "dSenegal">0</td>
+					<td id = "gpSenegal">0</td>
+					<td id = "gcSenegal">0</td>
+					<td id = "sgSenegal">0</td>
+					<td id = "ptsSenegal">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraHolanda.JPG"></td>
+					<td id = "Holanda">Holanda</td>
+					<td id = "jHolanda">0</td>
+					<td id = "vHolanda">0</td>
+					<td id = "eHolanda">0</td>
+					<td id = "dHolanda">0</td>
+					<td id = "gpHolanda">0</td>
+					<td id = "gcHolanda">0</td>
+					<td id = "sgHolanda">0</td>
+					<td id = "ptsHolanda">0</td>
+				</tr>
+			</table><!--Grupo A-->
+
+			<div class = "jogos_grupo_a">
+				<!--Senegal-X-Holanda-->
+				<img src="images/bandeiraSenegal.JPG">
+				<h4>Senegal</h4>
+				<input min = "0" max = "99" type = "number" id = "ga1m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ1GA()" min = "0" max = "99" type = "number" id = "ga1v">
+				<h4>Holanda</h4>
+				<img src="images/bandeiraHolanda.JPG">
+			</div><!--Jogos Grupo A-->
+
+			<div class = "jogos_grupo_a">
+				<!--Catar-X-Equador-->
+				<img src="images/bandeiraCatar.JPG">
+				<h4>Catar</h4>
+				<input min = "0" max = "99" type = "number" id = "ga2m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ2GA()" min = "0" max = "99" type = "number" id = "ga2v">
+				<h4>Equador</h4>
+				<img src="images/bandeiraEquador.JPG">
+			</div><!--Jogos Grupo A-->
+
+			<div class = "jogos_grupo_a">
+				<!--Catar-X-Senegal-->
+				<img src="images/bandeiraCatar.JPG">
+				<h4>Catar</h4>
+				<input min = "0" max = "99" type = "number" id = "ga3m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ3GA()" min = "0" max = "99" type = "number" id = "ga3v">
+				<h4>Senegal</h4>
+				<img src="images/bandeiraSenegal.JPG">
+			</div><!--Jogos Grupo A-->
+
+			<div class = "jogos_grupo_a">
+				<!--Holanda-X-Equador-->
+				<img src="images/bandeiraHolanda.JPG">
+				<h4>Holanda</h4>
+				<input min = "0" max = "99" type = "number" id = "ga4m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ4GA()" min = "0" max = "99" type = "number" id = "ga4v">
+				<h4>Equador</h4>
+				<img src="images/bandeiraEquador.JPG">
+			</div><!--Jogos Grupo A-->
+
+			<div class = "jogos_grupo_a">
+				<!--Holanda-X-Catar-->
+				<img src="images/bandeiraHolanda.JPG">
+				<h4>Holanda</h4>
+				<input min = "0" max = "99" type = "number" id = "ga5m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ5GA()" min = "0" max = "99" type = "number" id = "ga5v">
+				<h4>Catar</h4>
+				<img src="images/bandeiraCatar.JPG">
+			</div><!--Jogos Grupo A-->
+
+			<div class = "jogos_grupo_a">
+				<!--Equador-X-Senegal-->
+				<img src="images/bandeiraEquador.JPG">
+				<h4>Equador</h4>
+				<input min = "0" max = "99" type = "number" id = "ga6m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ6GA()" min = "0" max = "99" type = "number" id = "ga6v">
+				<h4>Senegal</h4>
+				<img src="images/bandeiraSenegal.JPG">
+			</div><!--Jogos Grupo A-->
+		</section><!--Grupo A-->
+
+		
+		<section class = "grupo_b_section" id = "grupo_b_section"><!--Grupo B-->
+			<table class = "grupo_b">
+				<tr>
+					<td>Grupo B</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Seleção</td>
+					<td>Jogos</td>
+					<td>Vitórias</td>
+					<td>Empates</td>
+					<td>Derrotas</td>
+					<td>Gols Pró</td>
+					<td>Gols Contra</td>
+					<td>Saldo de Gols</td>
+					<td>Pontos</td>
+				</tr>
+
+				<tr>
+					<td><img src = "images/bandeiraInglaterra.JPG"></td>
+					<td id = "Inglaterra">Inglaterra</td>
+					<td id = "jInglaterra">0</td>
+					<td id = "vInglaterra">0</td>
+					<td id = "eInglaterra">0</td>
+					<td id = "dInglaterra">0</td>
+					<td id = "gpInglaterra">0</td>
+					<td id = "gcInglaterra">0</td>
+					<td id = "sgInglaterra">0</td>
+					<td id = "ptsInglaterra">0</td>
+				</tr>
+
+				<tr>
+					<td><img src = "images/bandeiraIra.JPG"></td>
+					<td id = "Ira">Ira</td>
+					<td id = "jIra">0</td>
+					<td id = "vIra">0</td>
+					<td id = "eIra">0</td>
+					<td id = "dIra">0</td>
+					<td id = "gpIra">0</td>
+					<td id = "gcIra">0</td>
+					<td id = "sgIra">0</td>
+					<td id = "ptsIra">0</td>
+				</tr>
+
+				<tr>
+					<td><img src = "images/bandeiraEUA.JPG"></td>
+					<td id = "EUA">EUA</td>
+					<td id = "jEUA">0</td>
+					<td id = "vEUA">0</td>
+					<td id = "eEUA">0</td>
+					<td id = "dEUA">0</td>
+					<td id = "gpEUA">0</td>
+					<td id = "gcEUA">0</td>
+					<td id = "sgEUA">0</td>
+					<td id = "ptsEUA">0</td>
+				</tr>
+
+				<tr>
+					<td><img src = "images/bandeiraUEFA.JPG"></td>
+					<td id = "UEFA">UEFA</td>
+					<td id = "jUEFA">0</td>
+					<td id = "vUEFA">0</td>
+					<td id = "eUEFA">0</td>
+					<td id = "dUEFA">0</td>
+					<td id = "gpUEFA">0</td>
+					<td id = "gcUEFA">0</td>
+					<td id = "sgUEFA">0</td>
+					<td id = "ptsUEFA">0</td>
+				</tr>
+
+			</table><!--Grupo B-->
+			<h4 class = "repescagens">*UEFA: País de Gales ou Escócia ou Ucrânia </h4>
+			
+			<div class = "jogos_grupo_b">
+				<!--EUA-X-UEFA-->
+				<img src = "images/bandeiraEUA.JPG">
+				<h4>EUA</h4>
+				<input min = "0" max = "99" type = "number" id = "gb1m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ1GB()" min = "0" max = "99" type = "number" id = "gb1v">
+				<h4>UEFA</h4>
+				<img src = "images/bandeiraUEFA.JPG">
+			</div><!--Jogos Grupo B-->
+
+			<div class = "jogos_grupo_b">
+				<!--Inglaterra-X-Ira-->
+				<img src = "images/bandeiraInglaterra.JPG">
+				<h4>Inglaterra</h4>
+				<input min = "0" max = "99" type = "number" id = "gb2m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ2GB()" min = "0" max = "99" type = "number" id = "gb2v">
+				<h4>Irã</h4>
+				<img src = "images/bandeiraIra.JPG">
+			</div><!--Jogos Grupo B-->
+
+			<div class = "jogos_grupo_b">
+				<!--Inglaterra-X-EUA-->
+				<img src = "images/bandeiraInglaterra.JPG">
+				<h4>Inglaterra</h4>
+				<input min = "0" max = "99" type = "number" id = "gb3m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ3GB()" min = "0" max = "99" type = "number" id = "gb3v">
+				<h4>EUA</h4>
+				<img src = "images/bandeiraEUA.JPG">
+			</div><!--Jogos Grupo B-->
+
+			<div class = "jogos_grupo_b">
+				<!--UEFA-X-Ira-->
+				<img src = "images/bandeiraUEFA.JPG">
+				<h4>UEFA</h4>
+				<input min = "0" max = "99" type = "number" id = "gb4m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ4GB()" min = "0" max = "99" type = "number" id = "gb4v">
+				<h4>Irã</h4>
+				<img src = "images/bandeiraIra.JPG">
+			</div><!--Jogos Grupo B-->
+
+			<div class = "jogos_grupo_b">
+				<!--UEFA-X-Inglaterra-->
+				<img src = "images/bandeiraUEFA.JPG">
+				<h4>UEFA</h4>
+				<input min = "0" max = "99" type = "number" id = "gb5m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ5GB()" min = "0" max = "99" type = "number" id = "gb5v">
+				<h4>Inglaterra</h4>
+				<img src = "images/bandeiraInglaterra.JPG">
+			</div><!--Jogos Grupo B-->
+
+			<div class = "jogos_grupo_a">
+				<!--Ira-X-EUA-->
+				<img src = "images/bandeiraIra.JPG">
+				<h4>Irã</h4>
+				<input min = "0" max = "99" type = "number" id = "gb6m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ6GB()" min = "0" max = "99" type = "number" id = "gb6v">
+				<h4>EUA</h4>
+				<img src = "images/bandeiraEUA.JPG">
+			</div><!--Jogos Grupo B-->
+		</section><!--Grupo B-->
+
+
+		<section class = "grupo_c_section" id = "grupo_c_section"><!--Grupo C-->
+			<table class = "grupo_c">
+				<tr>
+					<td>Grupo C</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Seleção</td>
+					<td>Jogos</td>
+					<td>Vitórias</td>
+					<td>Empates</td>
+					<td>Derrotas</td>
+					<td>Gols Pró</td>
+					<td>Gols Contra</td>
+					<td>Saldo de Gols</td>
+					<td>Pontos</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraArgentina.JPG"></td>
+					<td id = "Argentina">Argentina</td>
+					<td id = "jArgentina">0</td>
+					<td id = "vArgentina">0</td>
+					<td id = "eArgentina">0</td>
+					<td id = "dArgentina">0</td>
+					<td id = "gpArgentina">0</td>
+					<td id = "gcArgentina">0</td>
+					<td id = "sgArgentina">0</td>
+					<td id = "ptsArgentina">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraArabiaSaudita.JPG"></td>
+					<td id = "ArabiaSaudita">ArabiaSaudita</td>
+					<td id = "jArabiaSaudita">0</td>
+					<td id = "vArabiaSaudita">0</td>
+					<td id = "eArabiaSaudita">0</td>
+					<td id = "dArabiaSaudita">0</td>
+					<td id = "gpArabiaSaudita">0</td>
+					<td id = "gcArabiaSaudita">0</td>
+					<td id = "sgArabiaSaudita">0</td>
+					<td id = "ptsArabiaSaudita">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraMexico.JPG"></td>
+					<td id = "Mexico">Mexico</td>
+					<td id = "jMexico">0</td>
+					<td id = "vMexico">0</td>
+					<td id = "eMexico">0</td>
+					<td id = "dMexico">0</td>
+					<td id = "gpMexico">0</td>
+					<td id = "gcMexico">0</td>
+					<td id = "sgMexico">0</td>
+					<td id = "ptsMexico">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraPolonia.JPG"></td>
+					<td id = "Polonia">Polonia</td>
+					<td id = "jPolonia">0</td>
+					<td id = "vPolonia">0</td>
+					<td id = "ePolonia">0</td>
+					<td id = "dPolonia">0</td>
+					<td id = "gpPolonia">0</td>
+					<td id = "gcPolonia">0</td>
+					<td id = "sgPolonia">0</td>
+					<td id = "ptsPolonia">0</td>
+				</tr>
+			</table><!--Grupo C-->
+
+			<div class = "jogos_grupo_c">
+				<!--Mexico-X-Polonia-->
+				<img src="images/bandeiraMexico.JPG">
+				<h4>Mexico</h4>
+				<input min = "0" max = "99" type = "number" id = "gc1m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ1GC()" min = "0" max = "99" type = "number" id = "gc1v">
+				<h4>Polonia</h4>
+				<img src="images/bandeiraPolonia.JPG">
+			</div><!--Jogos Grupo C-->
+
+			<div class = "jogos_grupo_c">
+				<!--Argentina-X-ArabiaSaudita-->
+				<img src="images/bandeiraArgentina.JPG">
+				<h4>Argentina</h4>
+				<input min = "0" max = "99" type = "number" id = "gc2m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ2GC()" min = "0" max = "99" type = "number" id = "gc2v">
+				<h4>ArabiaSaudita</h4>
+				<img src="images/bandeiraArabiaSaudita.JPG">
+			</div><!--Jogos Grupo C-->
+
+			<div class = "jogos_grupo_c">
+				<!--Argentina-X-Mexico-->
+				<img src="images/bandeiraArgentina.JPG">
+				<h4>Argentina</h4>
+				<input min = "0" max = "99" type = "number" id = "gc3m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ3GC()" min = "0" max = "99" type = "number" id = "gc3v">
+				<h4>Mexico</h4>
+				<img src="images/bandeiraMexico.JPG">
+			</div><!--Jogos Grupo C-->
+
+			<div class = "jogos_grupo_c">
+				<!--Polonia-X-ArabiaSaudita-->
+				<img src="images/bandeiraPolonia.JPG">
+				<h4>Polonia</h4>
+				<input min = "0" max = "99" type = "number" id = "gc4m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ4GC()" min = "0" max = "99" type = "number" id = "gc4v">
+				<h4>ArabiaSaudita</h4>
+				<img src="images/bandeiraArabiaSaudita.JPG">
+			</div><!--Jogos Grupo C-->
+
+			<div class = "jogos_grupo_c">
+				<!--Polonia-X-Argentina-->
+				<img src="images/bandeiraPolonia.JPG">
+				<h4>Polonia</h4>
+				<input min = "0" max = "99" type = "number" id = "gc5m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ5GC()" min = "0" max = "99" type = "number" id = "gc5v">
+				<h4>Argentina</h4>
+				<img src="images/bandeiraArgentina.JPG">
+			</div><!--Jogos Grupo C-->
+
+			<div class = "jogos_grupo_c">
+				<!--ArabiaSaudita-X-Mexico-->
+				<img src="images/bandeiraArabiaSaudita.JPG">
+				<h4>ArabiaSaudita</h4>
+				<input min = "0" max = "99" type = "number" id = "gc6m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ6GC()" min = "0" max = "99" type = "number" id = "gc6v">
+				<h4>Mexico</h4>
+				<img src="images/bandeiraMexico.JPG">
+			</div><!--Jogos Grupo C-->
+		</section><!--Grupo C-->
+
+
+		<section class = "grupo_d_section" id = "grupo_d_section"><!--Grupo D-->
+			<table class = "grupo_d">
+				<tr>
+					<td>Grupo D</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Seleção</td>
+					<td>Jogos</td>
+					<td>Vitórias</td>
+					<td>Empates</td>
+					<td>Derrotas</td>
+					<td>Gols Pró</td>
+					<td>Gols Contra</td>
+					<td>Saldo de Gols</td>
+					<td>Pontos</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraFrança.JPG"></td>
+					<td id = "França">França</td>
+					<td id = "jFrança">0</td>
+					<td id = "vFrança">0</td>
+					<td id = "eFrança">0</td>
+					<td id = "dFrança">0</td>
+					<td id = "gpFrança">0</td>
+					<td id = "gcFrança">0</td>
+					<td id = "sgFrança">0</td>
+					<td id = "ptsFrança">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraRepescagem1.JPG"></td>
+					<td id = "Repescagem1">Repescagem1</td>
+					<td id = "jRepescagem1">0</td>
+					<td id = "vRepescagem1">0</td>
+					<td id = "eRepescagem1">0</td>
+					<td id = "dRepescagem1">0</td>
+					<td id = "gpRepescagem1">0</td>
+					<td id = "gcRepescagem1">0</td>
+					<td id = "sgRepescagem1">0</td>
+					<td id = "ptsRepescagem1">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraDinamarca.JPG"></td>
+					<td id = "Dinamarca">Dinamarca</td>
+					<td id = "jDinamarca">0</td>
+					<td id = "vDinamarca">0</td>
+					<td id = "eDinamarca">0</td>
+					<td id = "dDinamarca">0</td>
+					<td id = "gpDinamarca">0</td>
+					<td id = "gcDinamarca">0</td>
+					<td id = "sgDinamarca">0</td>
+					<td id = "ptsDinamarca">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraTunisia.JPG"></td>
+					<td id = "Tunisia">Tunisia</td>
+					<td id = "jTunisia">0</td>
+					<td id = "vTunisia">0</td>
+					<td id = "eTunisia">0</td>
+					<td id = "dTunisia">0</td>
+					<td id = "gpTunisia">0</td>
+					<td id = "gcTunisia">0</td>
+					<td id = "sgTunisia">0</td>
+					<td id = "ptsTunisia">0</td>
+				</tr>
+			</table><!--Grupo D-->
+			<h4 class = "repescagens">*Repescagem 1: Emirados Árabes ou Austrália ou Peru</h4>
+
+			<div class = "jogos_grupo_d">
+				<!--Dinamarca-X-Tunisia-->
+				<img src="images/bandeiraDinamarca.JPG">
+				<h4>Dinamarca</h4>
+				<input min = "0" max = "99" type = "number" id = "gd1m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ1GD()" min = "0" max = "99" type = "number" id = "gd1v">
+				<h4>Tunisia</h4>
+				<img src="images/bandeiraTunisia.JPG">
+			</div><!--Jogos Grupo D-->
+
+			<div class = "jogos_grupo_d">
+				<!--França-X-Repescagem1-->
+				<img src="images/bandeiraFrança.JPG">
+				<h4>França</h4>
+				<input min = "0" max = "99" type = "number" id = "gd2m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ2GD()" min = "0" max = "99" type = "number" id = "gd2v">
+				<h4>Repescagem1</h4>
+				<img src="images/bandeiraRepescagem1.JPG">
+			</div><!--Jogos Grupo D-->
+
+			<div class = "jogos_grupo_d">
+				<!--França-X-Dinamarca-->
+				<img src="images/bandeiraFrança.JPG">
+				<h4>França</h4>
+				<input min = "0" max = "99" type = "number" id = "gd3m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ3GD()" min = "0" max = "99" type = "number" id = "gd3v">
+				<h4>Dinamarca</h4>
+				<img src="images/bandeiraDinamarca.JPG">
+			</div><!--Jogos Grupo D-->
+
+			<div class = "jogos_grupo_d">
+				<!--Tunisia-X-Repescagem1-->
+				<img src="images/bandeiraTunisia.JPG">
+				<h4>Tunisia</h4>
+				<input min = "0" max = "99" type = "number" id = "gd4m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ4GD()" min = "0" max = "99" type = "number" id = "gd4v">
+				<h4>Repescagem1</h4>
+				<img src="images/bandeiraRepescagem1.JPG">
+			</div><!--Jogos Grupo D-->
+
+			<div class = "jogos_grupo_d">
+				<!--Tunisia-X-França-->
+				<img src="images/bandeiraTunisia.JPG">
+				<h4>Tunisia</h4>
+				<input min = "0" max = "99" type = "number" id = "gd5m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ5GD()" min = "0" max = "99" type = "number" id = "gd5v">
+				<h4>França</h4>
+				<img src="images/bandeiraFrança.JPG">
+			</div><!--Jogos Grupo D-->
+
+			<div class = "jogos_grupo_d">
+				<!--Repescagem1-X-Dinamarca-->
+				<img src="images/bandeiraRepescagem1.JPG">
+				<h4>Repescagem1</h4>
+				<input min = "0" max = "99" type = "number" id = "gd6m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ6GD()" min = "0" max = "99" type = "number" id = "gd6v">
+				<h4>Dinamarca</h4>
+				<img src="images/bandeiraDinamarca.JPG">
+			</div><!--Jogos Grupo D-->
+		</section><!--Grupo D-->
+
+
+		<section class = "grupo_e_section" id = "grupo_e_section"><!--Grupo E-->
+			<table class = "grupo_e">
+				<tr>
+					<td>Grupo E</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Seleção</td>
+					<td>Jogos</td>
+					<td>Vitórias</td>
+					<td>Empates</td>
+					<td>Derrotas</td>
+					<td>Gols Pró</td>
+					<td>Gols Contra</td>
+					<td>Saldo de Gols</td>
+					<td>Pontos</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraEspanha.JPG"></td>
+					<td id = "Espanha">Espanha</td>
+					<td id = "jEspanha">0</td>
+					<td id = "vEspanha">0</td>
+					<td id = "eEspanha">0</td>
+					<td id = "dEspanha">0</td>
+					<td id = "gpEspanha">0</td>
+					<td id = "gcEspanha">0</td>
+					<td id = "sgEspanha">0</td>
+					<td id = "ptsEspanha">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraRepescagem2.JPG"></td>
+					<td id = "Repescagem2">Repescagem2</td>
+					<td id = "jRepescagem2">0</td>
+					<td id = "vRepescagem2">0</td>
+					<td id = "eRepescagem2">0</td>
+					<td id = "dRepescagem2">0</td>
+					<td id = "gpRepescagem2">0</td>
+					<td id = "gcRepescagem2">0</td>
+					<td id = "sgRepescagem2">0</td>
+					<td id = "ptsRepescagem2">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraAlemanha.JPG"></td>
+					<td id = "Alemanha">Alemanha</td>
+					<td id = "jAlemanha">0</td>
+					<td id = "vAlemanha">0</td>
+					<td id = "eAlemanha">0</td>
+					<td id = "dAlemanha">0</td>
+					<td id = "gpAlemanha">0</td>
+					<td id = "gcAlemanha">0</td>
+					<td id = "sgAlemanha">0</td>
+					<td id = "ptsAlemanha">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraJapao.JPG"></td>
+					<td id = "Japao">Japao</td>
+					<td id = "jJapao">0</td>
+					<td id = "vJapao">0</td>
+					<td id = "eJapao">0</td>
+					<td id = "dJapao">0</td>
+					<td id = "gpJapao">0</td>
+					<td id = "gcJapao">0</td>
+					<td id = "sgJapao">0</td>
+					<td id = "ptsJapao">0</td>
+				</tr>
+			</table><!--Grupo E-->
+			<h4 class = "repescagens">*Repescagem 2: Costa Rica ou Nova Zelândia</h4>
+
+			<div class = "jogos_grupo_e">
+				<!--Alemanha-X-Japao-->
+				<img src="images/bandeiraAlemanha.JPG">
+				<h4>Alemanha</h4>
+				<input min = "0" max = "99" type = "number" id = "ge1m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ1GE()" min = "0" max = "99" type = "number" id = "ge1v">
+				<h4>Japao</h4>
+				<img src="images/bandeiraJapao.JPG">
+			</div><!--Jogos Grupo E-->
+
+			<div class = "jogos_grupo_e">
+				<!--Espanha-X-Repescagem2-->
+				<img src="images/bandeiraEspanha.JPG">
+				<h4>Espanha</h4>
+				<input min = "0" max = "99" type = "number" id = "ge2m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ2GE()" min = "0" max = "99" type = "number" id = "ge2v">
+				<h4>Repescagem2</h4>
+				<img src="images/bandeiraRepescagem2.JPG">
+			</div><!--Jogos Grupo E-->
+
+			<div class = "jogos_grupo_e">
+				<!--Espanha-X-Alemanha-->
+				<img src="images/bandeiraEspanha.JPG">
+				<h4>Espanha</h4>
+				<input min = "0" max = "99" type = "number" id = "ge3m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ3GE()" min = "0" max = "99" type = "number" id = "ge3v">
+				<h4>Alemanha</h4>
+				<img src="images/bandeiraAlemanha.JPG">
+			</div><!--Jogos Grupo E-->
+
+			<div class = "jogos_grupo_e">
+				<!--Japao-X-Repescagem2-->
+				<img src="images/bandeiraJapao.JPG">
+				<h4>Japao</h4>
+				<input min = "0" max = "99" type = "number" id = "ge4m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ4GE()" min = "0" max = "99" type = "number" id = "ge4v">
+				<h4>Repescagem2</h4>
+				<img src="images/bandeiraRepescagem2.JPG">
+			</div><!--Jogos Grupo E-->
+
+			<div class = "jogos_grupo_e">
+				<!--Japao-X-Espanha-->
+				<img src="images/bandeiraJapao.JPG">
+				<h4>Japao</h4>
+				<input min = "0" max = "99" type = "number" id = "ge5m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ5GE()" min = "0" max = "99" type = "number" id = "ge5v">
+				<h4>Espanha</h4>
+				<img src="images/bandeiraEspanha.JPG">
+			</div><!--Jogos Grupo E-->
+
+			<div class = "jogos_grupo_e">
+				<!--Repescagem2-X-Alemanha-->
+				<img src="images/bandeiraRepescagem2.JPG">
+				<h4>Repescagem2</h4>
+				<input min = "0" max = "99" type = "number" id = "ge6m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ6GE()" min = "0" max = "99" type = "number" id = "ge6v">
+				<h4>Alemanha</h4>
+				<img src="images/bandeiraAlemanha.JPG">
+			</div><!--Jogos Grupo E-->
+		</section><!--Grupo E-->
+
+
+		<section class = "grupo_f_section" id = "grupo_f_section"><!--Grupo F-->
+			<table class = "grupo_f">
+				<tr>
+					<td>Grupo F</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Seleção</td>
+					<td>Jogos</td>
+					<td>Vitórias</td>
+					<td>Empates</td>
+					<td>Derrotas</td>
+					<td>Gols Pró</td>
+					<td>Gols Contra</td>
+					<td>Saldo de Gols</td>
+					<td>Pontos</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraBelgica.JPG"></td>
+					<td id = "Belgica">Belgica</td>
+					<td id = "jBelgica">0</td>
+					<td id = "vBelgica">0</td>
+					<td id = "eBelgica">0</td>
+					<td id = "dBelgica">0</td>
+					<td id = "gpBelgica">0</td>
+					<td id = "gcBelgica">0</td>
+					<td id = "sgBelgica">0</td>
+					<td id = "ptsBelgica">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraCanada.JPG"></td>
+					<td id = "Canada">Canada</td>
+					<td id = "jCanada">0</td>
+					<td id = "vCanada">0</td>
+					<td id = "eCanada">0</td>
+					<td id = "dCanada">0</td>
+					<td id = "gpCanada">0</td>
+					<td id = "gcCanada">0</td>
+					<td id = "sgCanada">0</td>
+					<td id = "ptsCanada">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraMarrocos.JPG"></td>
+					<td id = "Marrocos">Marrocos</td>
+					<td id = "jMarrocos">0</td>
+					<td id = "vMarrocos">0</td>
+					<td id = "eMarrocos">0</td>
+					<td id = "dMarrocos">0</td>
+					<td id = "gpMarrocos">0</td>
+					<td id = "gcMarrocos">0</td>
+					<td id = "sgMarrocos">0</td>
+					<td id = "ptsMarrocos">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraCroacia.JPG"></td>
+					<td id = "Croacia">Croacia</td>
+					<td id = "jCroacia">0</td>
+					<td id = "vCroacia">0</td>
+					<td id = "eCroacia">0</td>
+					<td id = "dCroacia">0</td>
+					<td id = "gpCroacia">0</td>
+					<td id = "gcCroacia">0</td>
+					<td id = "sgCroacia">0</td>
+					<td id = "ptsCroacia">0</td>
+				</tr>
+			</table><!--Grupo F-->
+
+			<div class = "jogos_grupo_f">
+				<!--Marrocos-X-Croacia-->
+				<img src="images/bandeiraMarrocos.JPG">
+				<h4>Marrocos</h4>
+				<input min = "0" max = "99" type = "number" id = "gf1m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ1GF()" min = "0" max = "99" type = "number" id = "gf1v">
+				<h4>Croacia</h4>
+				<img src="images/bandeiraCroacia.JPG">
+			</div><!--Jogos Grupo F-->
+
+			<div class = "jogos_grupo_f">
+				<!--Belgica-X-Canada-->
+				<img src="images/bandeiraBelgica.JPG">
+				<h4>Belgica</h4>
+				<input min = "0" max = "99" type = "number" id = "gf2m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ2GF()" min = "0" max = "99" type = "number" id = "gf2v">
+				<h4>Canada</h4>
+				<img src="images/bandeiraCanada.JPG">
+			</div><!--Jogos Grupo F-->
+
+			<div class = "jogos_grupo_f">
+				<!--Belgica-X-Marrocos-->
+				<img src="images/bandeiraBelgica.JPG">
+				<h4>Belgica</h4>
+				<input min = "0" max = "99" type = "number" id = "gf3m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ3GF()" min = "0" max = "99" type = "number" id = "gf3v">
+				<h4>Marrocos</h4>
+				<img src="images/bandeiraMarrocos.JPG">
+			</div><!--Jogos Grupo F-->
+
+			<div class = "jogos_grupo_f">
+				<!--Croacia-X-Canada-->
+				<img src="images/bandeiraCroacia.JPG">
+				<h4>Croacia</h4>
+				<input min = "0" max = "99" type = "number" id = "gf4m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ4GF()" min = "0" max = "99" type = "number" id = "gf4v">
+				<h4>Canada</h4>
+				<img src="images/bandeiraCanada.JPG">
+			</div><!--Jogos Grupo F-->
+
+			<div class = "jogos_grupo_f">
+				<!--Croacia-X-Belgica-->
+				<img src="images/bandeiraCroacia.JPG">
+				<h4>Croacia</h4>
+				<input min = "0" max = "99" type = "number" id = "gf5m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ5GF()" min = "0" max = "99" type = "number" id = "gf5v">
+				<h4>Belgica</h4>
+				<img src="images/bandeiraBelgica.JPG">
+			</div><!--Jogos Grupo F-->
+
+			<div class = "jogos_grupo_f">
+				<!--Canada-X-Marrocos-->
+				<img src="images/bandeiraCanada.JPG">
+				<h4>Canada</h4>
+				<input min = "0" max = "99" type = "number" id = "gf6m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ6GF()" min = "0" max = "99" type = "number" id = "gf6v">
+				<h4>Marrocos</h4>
+				<img src="images/bandeiraMarrocos.JPG">
+			</div><!--Jogos Grupo F-->
+		</section><!--Grupo F-->
+
+
+		<section class = "grupo_g_section" id = "grupo_g_section"><!--Grupo G-->
+			<table class = "grupo_g">
+				<tr>
+					<td>Grupo G</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Seleção</td>
+					<td>Jogos</td>
+					<td>Vitórias</td>
+					<td>Empates</td>
+					<td>Derrotas</td>
+					<td>Gols Pró</td>
+					<td>Gols Contra</td>
+					<td>Saldo de Gols</td>
+					<td>Pontos</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraBrasil.JPG"></td>
+					<td id = "Brasil">Brasil</td>
+					<td id = "jBrasil">0</td>
+					<td id = "vBrasil">0</td>
+					<td id = "eBrasil">0</td>
+					<td id = "dBrasil">0</td>
+					<td id = "gpBrasil">0</td>
+					<td id = "gcBrasil">0</td>
+					<td id = "sgBrasil">0</td>
+					<td id = "ptsBrasil">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraServia.JPG"></td>
+					<td id = "Servia">Servia</td>
+					<td id = "jServia">0</td>
+					<td id = "vServia">0</td>
+					<td id = "eServia">0</td>
+					<td id = "dServia">0</td>
+					<td id = "gpServia">0</td>
+					<td id = "gcServia">0</td>
+					<td id = "sgServia">0</td>
+					<td id = "ptsServia">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraSuiça.JPG"></td>
+					<td id = "Suiça">Suiça</td>
+					<td id = "jSuiça">0</td>
+					<td id = "vSuiça">0</td>
+					<td id = "eSuiça">0</td>
+					<td id = "dSuiça">0</td>
+					<td id = "gpSuiça">0</td>
+					<td id = "gcSuiça">0</td>
+					<td id = "sgSuiça">0</td>
+					<td id = "ptsSuiça">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraCamaroes.JPG"></td>
+					<td id = "Camaroes">Camaroes</td>
+					<td id = "jCamaroes">0</td>
+					<td id = "vCamaroes">0</td>
+					<td id = "eCamaroes">0</td>
+					<td id = "dCamaroes">0</td>
+					<td id = "gpCamaroes">0</td>
+					<td id = "gcCamaroes">0</td>
+					<td id = "sgCamaroes">0</td>
+					<td id = "ptsCamaroes">0</td>
+				</tr>
+			</table><!--Grupo G-->
+
+			<div class = "jogos_grupo_g">
+				<!--Suiça-X-Camaroes-->
+				<img src="images/bandeiraSuiça.JPG">
+				<h4>Suiça</h4>
+				<input min = "0" max = "99" type = "number" id = "gg1m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ1GG()" min = "0" max = "99" type = "number" id = "gg1v">
+				<h4>Camaroes</h4>
+				<img src="images/bandeiraCamaroes.JPG">
+			</div><!--Jogos Grupo G-->
+
+			<div class = "jogos_grupo_g">
+				<!--Brasil-X-Servia-->
+				<img src="images/bandeiraBrasil.JPG">
+				<h4>Brasil</h4>
+				<input min = "0" max = "99" type = "number" id = "gg2m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ2GG()" min = "0" max = "99" type = "number" id = "gg2v">
+				<h4>Servia</h4>
+				<img src="images/bandeiraServia.JPG">
+			</div><!--Jogos Grupo G-->
+
+			<div class = "jogos_grupo_g">
+				<!--Brasil-X-Suiça-->
+				<img src="images/bandeiraBrasil.JPG">
+				<h4>Brasil</h4>
+				<input min = "0" max = "99" type = "number" id = "gg3m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ3GG()" min = "0" max = "99" type = "number" id = "gg3v">
+				<h4>Suiça</h4>
+				<img src="images/bandeiraSuiça.JPG">
+			</div><!--Jogos Grupo G-->
+
+			<div class = "jogos_grupo_g">
+				<!--Camaroes-X-Servia-->
+				<img src="images/bandeiraCamaroes.JPG">
+				<h4>Camaroes</h4>
+				<input min = "0" max = "99" type = "number" id = "gg4m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ4GG()" min = "0" max = "99" type = "number" id = "gg4v">
+				<h4>Servia</h4>
+				<img src="images/bandeiraServia.JPG">
+			</div><!--Jogos Grupo G-->
+
+			<div class = "jogos_grupo_g">
+				<!--Camaroes-X-Brasil-->
+				<img src="images/bandeiraCamaroes.JPG">
+				<h4>Camaroes</h4>
+				<input min = "0" max = "99" type = "number" id = "gg5m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ5GG()" min = "0" max = "99" type = "number" id = "gg5v">
+				<h4>Brasil</h4>
+				<img src="images/bandeiraBrasil.JPG">
+			</div><!--Jogos Grupo G-->
+
+			<div class = "jogos_grupo_g">
+				<!--Servia-X-Suiça-->
+				<img src="images/bandeiraServia.JPG">
+				<h4>Servia</h4>
+				<input min = "0" max = "99" type = "number" id = "gg6m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ6GG()" min = "0" max = "99" type = "number" id = "gg6v">
+				<h4>Suiça</h4>
+				<img src="images/bandeiraSuiça.JPG">
+			</div><!--Jogos Grupo G-->
+		</section><!--Grupo G-->
+
+
+		<section class = "grupo_h_section" id = "grupo_h_section"><!--Grupo H-->
+			<table class = "grupo_h">
+				<tr>
+					<td>Grupo H</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Seleção</td>
+					<td>Jogos</td>
+					<td>Vitórias</td>
+					<td>Empates</td>
+					<td>Derrotas</td>
+					<td>Gols Pró</td>
+					<td>Gols Contra</td>
+					<td>Saldo de Gols</td>
+					<td>Pontos</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraPortugal.JPG"></td>
+					<td id = "Portugal">Portugal</td>
+					<td id = "jPortugal">0</td>
+					<td id = "vPortugal">0</td>
+					<td id = "ePortugal">0</td>
+					<td id = "dPortugal">0</td>
+					<td id = "gpPortugal">0</td>
+					<td id = "gcPortugal">0</td>
+					<td id = "sgPortugal">0</td>
+					<td id = "ptsPortugal">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraGana.JPG"></td>
+					<td id = "Gana">Gana</td>
+					<td id = "jGana">0</td>
+					<td id = "vGana">0</td>
+					<td id = "eGana">0</td>
+					<td id = "dGana">0</td>
+					<td id = "gpGana">0</td>
+					<td id = "gcGana">0</td>
+					<td id = "sgGana">0</td>
+					<td id = "ptsGana">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraUruguai.JPG"></td>
+					<td id = "Uruguai">Uruguai</td>
+					<td id = "jUruguai">0</td>
+					<td id = "vUruguai">0</td>
+					<td id = "eUruguai">0</td>
+					<td id = "dUruguai">0</td>
+					<td id = "gpUruguai">0</td>
+					<td id = "gcUruguai">0</td>
+					<td id = "sgUruguai">0</td>
+					<td id = "ptsUruguai">0</td>
+				</tr>
+
+				<tr>
+					<td><img src="images/bandeiraCoreiaDoSul.JPG"></td>
+					<td id = "CoreiaDoSul">CoreiaDoSul</td>
+					<td id = "jCoreiaDoSul">0</td>
+					<td id = "vCoreiaDoSul">0</td>
+					<td id = "eCoreiaDoSul">0</td>
+					<td id = "dCoreiaDoSul">0</td>
+					<td id = "gpCoreiaDoSul">0</td>
+					<td id = "gcCoreiaDoSul">0</td>
+					<td id = "sgCoreiaDoSul">0</td>
+					<td id = "ptsCoreiaDoSul">0</td>
+				</tr>
+			</table><!--Grupo H-->
+
+			<div class = "jogos_grupo_h">
+				<!--Uruguai-X-CoreiaDoSul-->
+				<img src="images/bandeiraUruguai.JPG">
+				<h4>Uruguai</h4>
+				<input min = "0" max = "99" type = "number" id = "gh1m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ1GH()" min = "0" max = "99" type = "number" id = "gh1v">
+				<h4>CoreiaDoSul</h4>
+				<img src="images/bandeiraCoreiaDoSul.JPG">
+			</div><!--Jogos Grupo H-->
+
+			<div class = "jogos_grupo_h">
+				<!--Portugal-X-Gana-->
+				<img src="images/bandeiraPortugal.JPG">
+				<h4>Portugal</h4>
+				<input min = "0" max = "99" type = "number" id = "gh2m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ2GH()" min = "0" max = "99" type = "number" id = "gh2v">
+				<h4>Gana</h4>
+				<img src="images/bandeiraGana.JPG">
+			</div><!--Jogos Grupo H-->
+
+			<div class = "jogos_grupo_h">
+				<!--Portugal-X-Uruguai-->
+				<img src="images/bandeiraPortugal.JPG">
+				<h4>Portugal</h4>
+				<input min = "0" max = "99" type = "number" id = "gh3m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ3GH()" min = "0" max = "99" type = "number" id = "gh3v">
+				<h4>Uruguai</h4>
+				<img src="images/bandeiraUruguai.JPG">
+			</div><!--Jogos Grupo H-->
+
+			<div class = "jogos_grupo_h">
+				<!--CoreiaDoSul-X-Gana-->
+				<img src="images/bandeiraCoreiaDoSul.JPG">
+				<h4>CoreiaDoSul</h4>
+				<input min = "0" max = "99" type = "number" id = "gh4m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ4GH()" min = "0" max = "99" type = "number" id = "gh4v">
+				<h4>Gana</h4>
+				<img src="images/bandeiraGana.JPG">
+			</div><!--Jogos Grupo A-->
+
+			<div class = "jogos_grupo_h">
+				<!--CoreiaDoSul-X-Portugal-->
+				<img src="images/bandeiraCoreiaDoSul.JPG">
+				<h4>CoreiaDoSul</h4>
+				<input min = "0" max = "99" type = "number" id = "gh5m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ5GH()" min = "0" max = "99" type = "number" id = "gh5v">
+				<h4>Portugal</h4>
+				<img src="images/bandeiraPortugal.JPG">
+			</div><!--Jogos Grupo H-->
+
+			<div class = "jogos_grupo_h">
+				<!--Gana-X-Uruguai-->
+				<img src="images/bandeiraGana.JPG">
+				<h4>Gana</h4>
+				<input min = "0" max = "99" type = "number" id = "gh6m">
+				<h4>X</h4>
+				<input oninput = "resultadoJ6GH()" min = "0" max = "99" type = "number" id = "gh6v">
+				<h4>Uruguai</h4>
+				<img src="images/bandeiraUruguai.JPG">
+			</div><!--Jogos Grupo H-->
+		</section><!--Grupo H-->
+
+
+		<!--Fase mata-mata-->
+		
+
+		<section class = "oitavas_section" id = "oitavas_section"><!--Oitavas de Final-->
+			<div class = "oitavas">
+				<h1>Oitavas de Final</h1>
+				<div class = "oitavas1">
+					<h4 id = "Primeiro_Grupo_A">1° Grupo A</h4>
+					<input min = "0" max = "99" type = "number" id = "oitavas1m">
+					<h4>X</h4>
+					<input oninput = "resultadoOitavas1()" min = "0" max = "99" type = "number" id = "oitavas1v">
+					<h4 id = "Segundo_Grupo_B">2° Grupo B</h4>
+				</div><!--oitavas1-->
+
+				<div class = "oitavas2">
+					<h4 id = "Primeiro_Grupo_C">1° Grupo C</h4>
+					<input min = "0" max = "99" type = "number" id = "oitavas2m">
+					<h4>X</h4>
+					<input oninput = "resultadoOitavas2()" min = "0" max = "99" type = "number" id = "oitavas2v">
+					<h4 id = "Segundo_Grupo_D">2° Grupo D</h4>
+				</div><!--oitavas2-->
+
+				<div class = "oitavas3">
+					<h4 id = "Primeiro_Grupo_E">1° Grupo E</h4>
+					<input min = "0" max = "99" type = "number" id = "oitavas3m">
+					<h4>X</h4>
+					<input oninput = "resultadoOitavas3()" min = "0" max = "99" type = "number" id = "oitavas3v">
+					<h4 id = "Segundo_Grupo_F">2° Grupo F</h4>
+				</div><!--oitavas3-->
+
+				<div class = "oitavas4">
+					<h4 id = "Primeiro_Grupo_G">1° Grupo G</h4>
+					<input min = "0" max = "99" type = "number" id = "oitavas4m">
+					<h4>X</h4>
+					<input oninput = "resultadoOitavas4()" min = "0" max = "99" type = "number" id = "oitavas4v">
+					<h4 id = "Segundo_Grupo_H">2° Grupo H</h4>
+				</div><!--oitavas4-->
+
+				<div class = "oitavas5">
+					<h4 id = "Primeiro_Grupo_B">1° Grupo B</h4>
+					<input min = "0" max = "99" type = "number" id = "oitavas5m">
+					<h4>X</h4>
+					<input oninput = "resultadoOitavas5()" min = "0" max = "99" type = "number" id = "oitavas5v">
+					<h4 id = "Segundo_Grupo_A">2° Grupo A</h4>
+				</div><!--oitavas5-->
+
+				<div class = "oitavas6">
+					<h4 id = "Primeiro_Grupo_D">1° Grupo D</h4>
+					<input min = "0" max = "99" type = "number" id = "oitavas6m">
+					<h4>X</h4>
+					<input oninput = "resultadoOitavas6()" min = "0" max = "99" type = "number" id = "oitavas6v">
+					<h4 id = "Segundo_Grupo_C">2° Grupo C</h4>
+				</div><!--oitavas6-->
+
+				<div class = "oitavas7">
+					<h4 id = "Primeiro_Grupo_F">1° Grupo F</h4>
+					<input min = "0" max = "99" type = "number" id = "oitavas7m">
+					<h4>X</h4>
+					<input oninput = "resultadoOitavas7()" min = "0" max = "99" type = "number" id = "oitavas7v">
+					<h4 id = "Segundo_Grupo_E">2° Grupo E</h4>
+				</div><!--oitavas7-->
+
+				<div class = "oitavas8">
+					<h4 id = "Primeiro_Grupo_H">1° Grupo H</h4>
+					<input min = "0" max = "99" type = "number" id = "oitavas8m">
+					<h4>X</h4>
+					<input oninput = "resultadoOitavas8()" min = "0" max = "99" type = "number" id = "oitavas8v">
+					<h4 id = "Segundo_Grupo_G">2° Grupo G</h4>
+				</div><!--oitavas8-->
+
+
+			</div>
+		</section><!--Oitavas de Final-->
+
+		<!--Quartas de Final-->
+
+		<section class = "quartas_section" id = "quartas_section"><!--Quartas de Final-->
+			<div class = "quartas">
+				<h1>Quartas de Final</h1>
+				<div class = "quartas1">
+					<h4 id = "VencedorOitavas_1">Vencedor Oitavas 1</h4>
+					<input min = "0" max = "99" type = "number" id = "quartas1m">
+					<h4>X</h4>
+					<input oninput = "resultadoQuartas1()" min = "0" max = "99" type = "number" id = "quartas1v">
+					<h4 id = "VencedorOitavas_2">Vencedor Oitavas 2</h4>
+				</div><!--quartas1-->
+
+				<div class = "quartas2">
+					<h4 id = "VencedorOitavas_3">Vencedor Oitavas 3</h4>
+					<input min = "0" max = "99" type = "number" id = "quartas2m">
+					<h4>X</h4>
+					<input oninput = "resultadoQuartas2()" min = "0" max = "99" type = "number" id = "quartas2v">
+					<h4 id = "VencedorOitavas_4">Vencedor Oitavas 4</h4>
+				</div><!--quartas2-->
+
+				<div class = "quartas3">
+					<h4 id = "VencedorOitavas_5">Vencedor Oitavas 5</h4>
+					<input min = "0" max = "99" type = "number" id = "quartas3m">
+					<h4>X</h4>
+					<input oninput = "resultadoQuartas3()" min = "0" max = "99" type = "number" id = "quartas3v">
+					<h4 id = "VencedorOitavas_6">Vencedor Oitavas 6</h4>
+				</div><!--quartas3-->
+
+				<div class = "quartas4">
+					<h4 id = "VencedorOitavas_7">Vencedor Oitavas 7</h4>
+					<input min = "0" max = "99" type = "number" id = "quartas4m">
+					<h4>X</h4>
+					<input oninput = "resultadoQuartas4()" min = "0" max = "99" type = "number" id = "quartas4v">
+					<h4 id = "VencedorOitavas_8">Vencedor Oitavas 8</h4>
+				</div><!--quartas4-->
+			</div><!--quartas-->
+		</section><!--Quartas de Final-->
+
+
+		<!--Semi Final-->
+
+		<section class = "semi_section" id = "semi_section"><!--Semi Final-->
+			<div class = "semi">
+				<h1>Semi Final</h1>
+				<div class = "semi1">
+					<h4 id = "VencedorQuartas_1">Vencedor Quartas 1</h4>
+					<input min = "0" max = "99" type = "number" id = "semi1m">
+					<h4>X</h4>
+					<input oninput = "resultadoSemi1()" min = "0" max = "99" type = "number" id = "semi1v">
+					<h4 id = "VencedorQuartas_2">Vencedor Quartas 2</h4>
+				</div><!--semi1-->
+
+				<div class = "semi2">
+					<h4 id = "VencedorQuartas_3">Vencedor Quartas 3</h4>
+					<input min = "0" max = "99" type = "number" id = "semi2m">
+					<h4>X</h4>
+					<input oninput = "resultadoSemi2()" min = "0" max = "99" type = "number" id = "semi2v">
+					<h4 id = "VencedorQuartas_4">Vencedor Quartas 4</h4>
+				</div><!--semi2-->
+
+			</div><!--semi-->
+		</section><!--Semi Final-->
+
+
+		<!--Final-->
+
+		<section class = "final_section" id = "final_section"><!--Final-->
+			<div class = "final">
+				<h1>Final</h1>
+				<div class = "final1">
+					<h4 id = "VencedorSemi_1">Vencedor Semi 1</h4>
+					<input min = "0" max = "99" type = "number" id = "final1m">
+					<h4>X</h4>
+					<input oninput = "resultadoFinal()" min = "0" max = "99" type = "number" id = "final1v">
+					<h4 id = "VencedorSemi_2">Vencedor Semi 2</h4>
+				</div><!--final1-->
+				<div class = "campeao">
+					<h1>Campeão</h1>
+					<h1 id = "VencedorFinal">Vencedor Final</h1>
+				</div>
+
+				<div class = "taca">
+					<img src = "images/taca.png">
+				</div><!--taca-->
+			</div><!--final-->
+		</section><!--Final-->
+		
+		<div class = "footer">
+			<h3 class = "madeby">Made by</h3>
+			<a class = "Leo" href = "https://www.linkedin.com/in/leonardo-jossani-b274a710a/" target = "_blank">Leonardo Jossani</a>
+		</div><!--footer-->
+		<script src = "./script/script.js"></script>
+	</body>
+</html>
